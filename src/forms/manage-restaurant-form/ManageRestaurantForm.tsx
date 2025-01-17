@@ -5,12 +5,12 @@ import { z } from "zod";
 import { DetailsSection } from "./DetailsSection";
 import { CuisinesSection } from "./CuisinesSection";
 import { Separator } from "@radix-ui/react-separator";
-import { MenuSection } from "./MenuSection";
-import { ImageSection } from "./ImageSection";
+import MenuSection from "./MenuSection";
 import { Button } from "@/components/ui/button";
 import { LoadingButton } from "@/components/LoadingButton";
 import { useEffect } from "react";
 import { Restaurant } from "@/types";
+import { ImageSection } from "./ImageSection";
 
 const formSchema = z.object({
     restaurantName: z.string({

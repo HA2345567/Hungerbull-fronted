@@ -36,4 +36,3 @@ export const Auth0ProviderWithNavigate = ({ children }: Props) => {
 
 
 }
-
