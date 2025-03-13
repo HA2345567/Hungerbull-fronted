@@ -3,10 +3,11 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { Toaster } from "sonner"
 import { BrowserRouter as Router } from "react-router-dom"
-import { AppRoutes } from './Approutes'
+
 
 import { Auth0ProviderWithNavigate } from './auth/Auth0ProviderWithNavigate'
 import { QueryClient, QueryClientProvider } from "react-query"
+import AppRoutes from './Approutes'
 
 const queryClient = new QueryClient({
   defaultOptions: {

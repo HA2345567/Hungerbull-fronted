@@ -1,3 +1,6 @@
+import { Key } from "react";
+
+
 export type User = {
     _id: string;
     email: string;
@@ -8,12 +11,14 @@ export type User = {
   };
   
   export type MenuItem = {
+    id: Key | null | undefined;
     _id: string;
     name: string;
     price: number;
   };
   
   export type Restaurant = {
+    name: string | undefined;
     _id: string;
     user: string;
     restaurantName: string;
