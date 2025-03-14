@@ -5,7 +5,7 @@ type Props = {
   order: Order;
 };
 
-const OrderStatusDetail = ({ order }: Props) => {
+export const OrderStatusDetail = ({ order }: Props) => {
   return (
     <div className="space-y-5">
       <div className="flex flex-col">
@@ -28,7 +28,7 @@ const OrderStatusDetail = ({ order }: Props) => {
       <Separator />
       <div className="flex flex-col">
         <span className="font-bold">Total</span>
-        <span>£{(order.totalAmount / 100).toFixed(2)}</span>
+        <span>${(order.totalAmount)}</span>
       </div>
     </div>
   );
